@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lacasa × Postulaciones</title>
+        <link href="style/bootstrap.css" rel="stylesheet" />
+        <link href="style/main.css" rel="stylesheet" />
+        <link href="style/font-awesome.css" rel="stylesheet" />
+        <link href="style/font-awesome.min.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="description" content="Description of website" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row block-bg block-single">
+                <div class="col-md-12 block">
+                    <h1>Postulaciones</h1>
+                    <hr/>
+                    <p>¡Puedes postularte aqui!</p>
+                    <form enctype="text/plain" action="mailto:cosasvariasveyan@gmail.com" method="post">
+                        <label class="apply-label" for="type">¿Cómo quieres postularte?</label>
+                        <select name="type" class="form-control" required>
+                            <option value="youtuber">Youtuber</option>
+                            <option value="moderator">Moderador</option>
+                            <option value="staff">Staff</option>
+                            <option value="administrator">Administrador</option>
+                            <!-- MEHR? -->
+                        </select><br />
+                        <label class="apply-label" for="name">¿Cuál este tu nombre?</label>
+                        <input type="text" class="form-control" name="name" placeholder="Escribe tu nombre" required><br />
+                        
+                        <label class="apply-label" for="alter">¿Que edad tienes?</label>
+                        <input type="number" class="form-control" name="alter" placeholder="Selecciona tu edad" value="14" min="14" required><br />
+                        
+                        <label class="apply-label" for="description">¿Porque te quieres postular?</label>
+                        <textarea class="form-control" name="description" placeholder="¿Porque postularte?"required></textarea><br />
+                        
+                        
+                        <label class="apply-label" for="references">¿Cuáles son tus experiencias / referencias?</label>
+                        <textarea class="form-control" name="references" placeholder="¿experiencias en otros servidores, etc?"required></textarea><br />
+                        
+                        <label class="apply-label" for="references">¿Porque la casa del frente?</label>
+                        <textarea class="form-control" name="references" placeholder="¿Porque elegiste la casa del frente?"required></textarea><br />
+                        
+                        <label class="apply-label" for="contact">¿Manera de contactarte? (Skype / Discord / Teamspeak / ...)</label>
+                        <input type="text" class="form-control" name="contact" placeholder="Escribe como quieres que te contactemos [nombre de usuario]" required><br />
+                        
+                        <label class="apply-label" for="email">Escribe tu email</label>
+                        <input type="email" class="form-control" name="email" placeholder="E-Mail" required><br />
+                        
+                        <input type="submit" class="btn btn-primary" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div> 
+            
+    </body>
+</html>
